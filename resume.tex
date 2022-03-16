@@ -1,0 +1,132 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{ctex}
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Chen Su}
+\address{+86 133-XXXX-XXXX \\ Shanghai, CN}
+\address{\href{mailto:ghosind@gmail.com}{ghosind@gmail.com} \\ \href{https://ghosind.com}{ghosind.com} \\ \href{github.com/ghosind}{github.com/ghosind}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+  {\bf B.Eng. in Computer Science and Technology} \hfill {Jane 2017}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{SKILLS}
+  \begin{itemize}
+    \itemsep -3pt {}
+    \item Strong knowledge of C, Golang, Javascript/Typescript, and C\# software development.
+    \item Design and implement scalable, highly available services with Docker and Kubernetes.
+    \item Knowledge of database schema design, and SQL, experience in MySQL, MongoDB, and ElasticSearch.
+    \item Proficient in UNIX/Linux environment, and shell scripting.
+    \item Familiar with AWS and AliCloud services.
+    \item Excellent git version management skills.
+    \item Knowledge of Web development with HTML5, Node.js, and React.
+    \item Ability to find out security and reliability issues.
+    \item Strong Chinese communication skills, and able to working with international teams.
+    \item Contributed to open source projects: thinkjs, upterm, etc.
+  \end{itemize}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{PROJECTS}
+\vspace{-1.25em}
+
+\item \textbf{FatCoupon} {Node.js, Golang, MongoDB, AWS} \hfill \href{www.fatcoupon.com}{fatcoupon.com}
+\begin{itemize}
+  \itemsep -3pt {}
+  \item Develop a Node.js monolithic service, Golang micro-services, and AWS Lambda serverless functions.
+  \item Support over 10 million requests per day (over 100 requests per second) by 9 docker instances (3x 2c4g EC2 instance, with 20\% CPU baseline).
+  \item Store data in MySQL and MongoDB to improve performance, and cache data by Redis.
+  \item Collect and analysis data from various sources.
+  \item Provide fuzzing text search by ElasticSearch.
+\end{itemize}
+
+\item \textbf{FTC Short Link} {Golang, MySQL, AWS} \hfill \href{ftc.cash}{ftc.cash}
+\begin{itemize}
+  \itemsep -3pt {}
+  \item Allocate unique id for every unique link by MySQL, and filter duplicate link by hashing functions.
+  \item Liner transformation a link id to pseudorandom number by linear congruential generator algorithm (LCG), and encode it by Base62 algorithm.
+  \item Deploy service to AWS Lambda to provide high availability and global acceleration.
+\end{itemize}
+
+\item \textbf{DVM} {ShellScript} \hfill \href{github.com/ghosind/dvm}{github.com/ghosind/dvm}
+\begin{itemize}
+  \itemsep -3pt {}
+  \item Create an NVM-like Deno version manager project with Shellscript.
+  \item Design, develop, and maintain the open source project as the core developer and maintainer.
+  \item Create test cases and GitHub Actions automation testing flow.
+  \item The project has been recommended by Gitee official team.
+\end{itemize}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Backend Engineer} \hfill May 2019 - Present\\
+FatCoupon \hfill \textit{}
+\begin{itemize}
+  \itemsep -3pt {}
+  \item Develop backend service to provide Restful API for web and mobile applications.
+  \item Design and develop micro-service architecture, and supporting inter-services communication by HTTP, gRPC, and MQ.
+  \item Design database schema (including MySQL and MongoDB), and optimize query performance.
+  \item Design scalable services with Docker, Kubernetes, and AWS Lambda.
+  \item Create Shellscript and Makefile scripts to automate the development and deployment processes.
+  \item Modify CDN pipeline to provide custom resizing and caching third-party resources.
+  \item AWS services and Linux OS management.
+  \item Create documentation with Swagger and markdown files.
+\end{itemize}
+
+\textbf{Backend Engineer} \hfill Aug 2018 - Feb 2019\\
+Timepop \hfill \textit{}
+\begin{itemize}
+  \itemsep -3pt {}
+  \item Develop a Node.js service to provide GraphQL API for mobile applications.
+  \item Implement recommendation system by FtF algorithm.
+  \item Develop instant chatting system based on Websocket.
+  \item Assist frontend team with developing mobile application with React Native framework.
+\end{itemize}
+
+\textbf{Backend Engineer} \hfill Apr 2018 - Aug 2018\\
+Dianda \hfill \textit{}
+\begin{itemize}
+  \itemsep -3pt {}
+  \item Lead 5 engineer teams to develop B2B products, including both Node.js services and web pages.
+  \item Participate in the product prototype design with PM and sales department.
+  \item Refactor and optimize the existing code, migrate Node.js 0.10 projects to Node.js 8.
+  \item Mentor junior engineers and interns.
+  \item Review code and fix bugs.
+\end{itemize}
+
+\textbf{Development Engineer} \hfill May 2017 - Nov 2017\\
+Pinming Software \hfill \textit{}
+\begin{itemize}
+  \itemsep -3pt {}
+  \item Develop building information management software based on C\#/C++ and Revit SDK.
+  \item Develop Windows desktop software by WPF framework.
+  \item Recognize and convert CAD file to 3D models.
+  \item Import and export data from 3D models to SQLite database.
+\end{itemize}
+
+\end{rSection}
+
+\end{document}
