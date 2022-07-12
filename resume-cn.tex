@@ -1,0 +1,108 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{ctex}
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry}
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Chen Su}
+\address{\href{mailto:ghosind@gmail.com}{ghosind@gmail.com} \\ \href{https://ghosind.com}{ghosind.com} \\ \href{github.com/ghosind}{github.com/ghosind}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{教育背景}
+
+  {\bf 工学学士} 计算机科学与技术 \hfill {Jane 2017}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{个人技能}
+  \begin{itemize}
+    \itemsep -3pt {}
+    \item 熟悉C、Golang、JavaScript/Typescript、Java以及C\#等编程语言，具有相应实际工作或项目经验。
+    \item 具有国家化团队（美国、欧洲、东南亚）合作经验，有一定的英文阅读表达能力。
+  \end{itemize}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+\begin{rSection}{工作经验}
+
+\textbf{FatCoupon} \hfill 2019.5 - 至今\\
+后端负责人 \hfill \textit{}
+\begin{itemize}
+  \itemsep -3pt {}
+  \item 实现公司项目从0至1落地，并带领后端组实现日均万级DAU以及千万级接口调用服务支持。
+  \item 主要负责服务架构体系设计，以及基于Golang、Node.js的后端服务设计与开发。
+  \item 开发并维护包括Web服务、日志、ORM等在内的内部基础库。
+  \item 优化数据缓存逻辑与网络拓扑结构，降低约85\%网络传输成本。
+  \item 通过实现验证码、调用频率限制、设备/IP黑名单、接口熔断等机制，抵御单日百万级恶意登录行为。
+\end{itemize}
+
+\textbf{Timepop} \hfill 2018.8 - 2019.2\\
+后端工程师 \hfill \textit{}
+\begin{itemize}
+  \itemsep -3pt {}
+  \item 开发基于FoF算法的好友推荐系统，为用户提供伪实时二度好友推荐。
+\end{itemize}
+
+\textbf{上海店达} \hfill 2018.4 - 2018.8\\
+后端工程师 \hfill \textit{}
+\begin{itemize}
+  \itemsep -3pt {}
+  \item 
+\end{itemize}
+
+\textbf{杭州品茗} \hfill 2017.5 - 2017.11\\
+软件工程师 \hfill \textit{}
+\begin{itemize}
+  \itemsep -3pt {}
+  \item 
+\end{itemize}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{项目经历}
+  \vspace{-1.25em}
+  
+  \item \textbf{FatCoupon} {} \hfill \href{www.fatcoupon.com}{fatcoupon.com}
+  \begin{itemize}
+    \itemsep -3pt {}
+    \item 设计并实现基于AWS EKS（kubernetes）、Docker、AWS Lambda函数计算构建微服务与无服务（serverless）架构体系，并通过HTTP、gRPC、消息队列以及Lambda调用实现服务间通信。
+    \item 基于AWS服务以及消息队列构建消息推送、邮件等基础服务，实现订阅列表、模板渲染以及十万级消息的处理。
+    \item 定时从上游服务获取并分析处理订单数据，实现每日十万级订单数据的检测、创建、更新以及其激励机制的处理。
+  \end{itemize}
+  
+  \item \textbf{Kash.ly短链接系统} {Golang, MySQL, AWS} \hfill \href{kashly.net}{kashly.net}
+  \begin{itemize}
+    \itemsep -3pt {}
+    \item 基于MD5、LCG以及Base62算法实现短链接服务，并加入校验位提供合法性校验。
+    \item 初期提供约一千四百万短链接资源容量，并预留通过哈希算法以及数据库分表分库等方式，进行快速资源容量扩展能力。
+    \item 记录并分析点击数据，提供历史点击量、点击设备等数据统计数据。
+  \end{itemize}
+  
+  \item \textbf{DVM} {ShellScript} \hfill \href{github.com/ghosind/dvm}{github.com/ghosind/dvm}
+  \begin{itemize}
+    \itemsep -3pt {}
+    \item 基于ShellScript实现的NVM-like Deno版本管理工具，并被列入Gitee官方推荐项目。
+  \end{itemize}
+  
+\end{rSection}
+  
+
+\end{document}
