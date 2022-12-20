@@ -28,11 +28,14 @@
 \begin{rSection}{个人技能}
   \begin{itemize}
     \itemsep -3pt {}
-    \item 熟悉C、Golang、JavaScript/Typescript、Java以及C\#等编程语言，具有相应实际工作或项目经验。
-    \item 具有国家化团队（美国、欧洲、东南亚）合作经验，有一定的英文阅读表达能力。
+    \item 熟悉C、Golang、JavaScript/TypeScript等编程语言，具有相应的的工作或项目经验。
+    \item 对Linux系统有一定的了解，熟悉Linux下基本命令的使用以及Shell脚本的编写。
+    \item 熟悉AWS云服务，具有四年基于AWS云服务的服务端应用程序开发经验，对阿里云及微软Azure有一定了解。
+    \item 具有GitHub Actions、GitLab CI/CD等自动化工具使用经验，熟悉通过Shell脚步构建自动化工具。
+    \item 具有国际化团队合作经验（北美、欧洲、东南亚），有一定的英文阅读表达能力。
+    \item 对开源具有热情，具有多个开源项目的参与经历。
   \end{itemize}
 \end{rSection}
-
 
 %----------------------------------------------------------------------------------------
 % WORK EXPERIENCE
@@ -40,39 +43,48 @@
 \begin{rSection}{工作经验}
 
 \textbf{FatCoupon} \hfill 2019.5 - 至今\\
-后端负责人 \hfill \textit{}
+后端工程师/后端负责人 \hfill \textit{}
 \begin{itemize}
   \itemsep -3pt {}
-  \item 实现公司项目从0至1落地，并带领后端组实现日均万级DAU以及千万级接口调用服务支持。
-  \item 主要负责服务架构体系设计，以及基于Golang、Node.js的后端服务设计与开发。
-  \item 开发并维护包括Web服务、日志、ORM等在内的内部基础库。
-  \item 优化数据缓存逻辑与网络拓扑结构，降低约85\%网络传输成本。
-  \item 通过实现验证码、调用频率限制、设备/IP黑名单、接口熔断等机制，抵御单日百万级恶意登录行为。
+  \item 负责服务端基于AWS Lambda、Docker等基础服务设计并构建跨项目架构体系，开发基于Golang、Node.js等语言实现的服务端系统。
+  \item 作为主要负责人参与了多个项目从0到1落地，并负责或参与后续的研发与维护。
+  \item 编写项目基础框架，构建动态配置中心、任务管道等基础设施服务，并建立通用邮件、推送等跨项目服务中间件服务。
+  \item 优化基于AWS云服务的网络拓扑结构，设计多级缓存逻辑，降低超过90\%内部网络通信传输成本（从单月190TB+降低至15TB以内）。
+  \item 构建基于身份识别、验证码校验等措施构建服务安全体系，防御脚本恶意登录等攻击性行为。
+  \item 基于React、AntDesign构建服务端控制平台，构建服务配置管理等基础服务的图形化处理界面。
 \end{itemize}
 
 \textbf{Timepop} \hfill 2018.8 - 2019.2\\
 后端工程师 \hfill \textit{}
 \begin{itemize}
   \itemsep -3pt {}
+  \item 作为主要负责人开发并维护基于Node.js、GraphQL的社交平台后端服务。
   \item 开发基于FoF算法的好友推荐系统，为用户提供伪实时二度好友推荐。
+  \item 参与基于AWS、Docker的服务端架构设计，基于GitLab CI/CD和Shell脚本实现服务自动化部署。
+  \item 参与部分移动端React Native界面及功能的实现。
 \end{itemize}
 
 \textbf{上海店达} \hfill 2018.4 - 2018.8\\
-后端工程师 \hfill \textit{}
+后端工程师/小组Leader \hfill \textit{}
 \begin{itemize}
   \itemsep -3pt {}
-  \item 
+  \item 主要负责通过Node.js开发基于Express框架的后端服务，并编写前端页面及交互脚本。
+  \item 作为采购服务组负责人对接产品经理、线下业务团队，确定需求内容及排期。
+  \item 优化历史遗留问题，稳定化多个复杂业务查询逻辑。
+  \item 带领小组成员制定代码规范，并将服务代码进行Promise化重构。
 \end{itemize}
 
 \textbf{杭州品茗} \hfill 2017.5 - 2017.11\\
 软件工程师 \hfill \textit{}
 \begin{itemize}
   \itemsep -3pt {}
-  \item 
+  \item 基于AutoDesk Revit、C\#、C++开发作为公司主要产品的HiBIM。
+  \item 开发基于WPF、WinForm的Windows桌面程序。
+  \item 参与基于2D CAD图纸的3D模型建模功能开发，实现管道建模等功能。
+  \item 基于SQLite实现HiBIM与CAD图纸数据的共享。
 \end{itemize}
 
 \end{rSection}
-
 
 %----------------------------------------------------------------------------------------
 % PROJECTS
@@ -83,26 +95,25 @@
   \item \textbf{FatCoupon} {} \hfill \href{www.fatcoupon.com}{fatcoupon.com}
   \begin{itemize}
     \itemsep -3pt {}
-    \item 设计并实现基于AWS EKS（kubernetes）、Docker、AWS Lambda函数计算构建微服务与无服务（serverless）架构体系，并通过HTTP、gRPC、消息队列以及Lambda调用实现服务间通信。
-    \item 基于AWS服务以及消息队列构建消息推送、邮件等基础服务，实现订阅列表、模板渲染以及十万级消息的处理。
-    \item 定时从上游服务获取并分析处理订单数据，实现每日十万级订单数据的检测、创建、更新以及其激励机制的处理。
+    \item 设计并实现基于Docker、AWS Lambda函数计算构建微服务与无服务（Serverless）架构体系，并通过HTTP、gRPC、消息队列以及Lambda调用实现服务间通信。
+    \item 基于AWS服务以及消息队列构建消息推送、邮件等基础服务，实现订阅列表、模板渲染以及日均十万级消息的处理。
+    \item 通过定时任务从多个上游服务获取并分析处理订单数据，实现对多个项目每日十万级订单数据的检测、创建、更新以及其奖励机制的处理。
   \end{itemize}
   
   \item \textbf{Kash.ly短链接系统} {Golang, MySQL, AWS} \hfill \href{kashly.net}{kashly.net}
   \begin{itemize}
     \itemsep -3pt {}
     \item 基于MD5、LCG以及Base62算法实现短链接服务，并加入校验位提供合法性校验。
-    \item 初期提供约一千四百万短链接资源容量，并预留通过哈希算法以及数据库分表分库等方式，进行快速资源容量扩展能力。
-    \item 记录并分析点击数据，提供历史点击量、点击设备等数据统计数据。
+    \item 记录并分析短链接点击数据，为运营团队及用户提供分时点击量、设备信息等统计数据。
   \end{itemize}
   
   \item \textbf{DVM} {ShellScript} \hfill \href{github.com/ghosind/dvm}{github.com/ghosind/dvm}
   \begin{itemize}
     \itemsep -3pt {}
-    \item 基于ShellScript实现的NVM-like Deno版本管理工具，并被列入Gitee官方推荐项目。
+    \item ShellScript编写的Deno版本管理个人开源项目，提供了与NVM相似的版本管理功能。
+    \item 项目在GitHub、Gitee等平台发布，并被列为Gitee官方推荐项目。
   \end{itemize}
   
 \end{rSection}
-  
 
 \end{document}
