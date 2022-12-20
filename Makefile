@@ -1,13 +1,15 @@
 TEX := xelatex
 
-SRC := resume.tex
-
 .PHONY: all
 
-all: clean build
+all: en zhcn
 
-build:  ${SRC}
-	$(TEX) ${SRC}
+en: resume
+
+zhcn: resume-cn
+
+%: %.tex
+	$(TEX) $<
 
 clean:
 	rm -rf *.aux
