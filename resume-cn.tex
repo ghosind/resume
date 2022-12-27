@@ -29,10 +29,13 @@
   \begin{itemize}
     \itemsep -3pt {}
     \item 熟悉C、Golang、JavaScript/TypeScript等编程语言，具有相应的的工作或项目经验。
+    \item 具有分布式后端服务架构设计经验，有能力独立或参与团队进行架构设计与技术选型。
     \item 熟悉常用的MySQL、MongoDB、Redis等数据库系统，对ElasticSearch有一定了解。
     \item 对Linux系统有一定的了解，熟悉Linux下基本命令的使用以及Shell脚本的编写。
     \item 熟悉Docker使用及Dockerfile的编写，对Kubernetes有一定了解。
+    \item 熟悉常用的HTTP、gGPC等通信方式，对GraphQL、SOAP等协议有所了解。
     \item 熟悉AWS云服务，具有四年基于AWS云服务的服务端应用程序开发经验，对阿里云及微软Azure有一定了解。
+    \item 了解消息队列系统机制，有RabbitMQ与ActiveMQ使用经验。
     \item 具有GitHub Actions、GitLab CI/CD等自动化工具使用经验，熟悉通过Shell脚本构建自动化工具。
     \item 具有国际化团队合作经验（北美、欧洲、东南亚），有一定的英文阅读表达能力。
     \item 对开源具有热情，具有多个开源项目的参与经历。
@@ -48,9 +51,9 @@
 后端工程师/后端负责人 \hfill \textit{}
 \begin{itemize}
   \itemsep -3pt {}
-  \item 负责服务端基于AWS Lambda、Docker等基础服务设计并构建跨项目架构体系，开发基于Golang、Node.js等语言实现的服务端系统。
   \item 作为主要负责人参与了多个项目从0到1落地，并负责或参与后续的研发与维护。
-  \item 编写项目基础框架，构建动态配置中心、任务管道等基础设施服务，并建立通用邮件、推送等跨项目服务中间件服务。
+  \item 负责服务端基于AWS Lambda、Docker等基础服务设计并构建跨项目架构体系，开发基于Golang、Node.js等语言实现的服务端系统。
+  \item 编写项目基础框架，构建动态配置中心、任务管道等基础设施服务，并建立通用邮件、消息推送等跨项目服务中间件服务。
   \item 优化基于AWS云服务的内部网络拓扑结构，设计多级缓存逻辑，降低超75\%的内部网络通信成本（单月成本由2700美元降低至600美元，通信数据传输量由单月190+TB降低至15TB）。
   \item 构建基于设备设别、验证码校验等方式的服务安全体系，防御脚本恶意登录等攻击性行为。
   \item 基于React、AntDesign构建服务端控制平台，实现服务配置管理等基础服务的图形化处理界面。
@@ -62,7 +65,7 @@
   \itemsep -3pt {}
   \item 作为主要负责人开发并维护基于Node.js、GraphQL的社交平台后端服务。
   \item 开发基于FoF算法的好友推荐系统，为用户提供伪实时二度好友推荐。
-  \item 参与基于AWS、Docker的服务端架构设计，基于GitLab CI/CD和Shell脚本实现服务自动化部署。
+  \item 参与基于AWS云服务、Docker的服务端架构设计，基于GitLab CI/CD和Shell脚本实现服务自动化部署。
   \item 参与部分移动端React Native界面及功能的实现。
 \end{itemize}
 
@@ -74,6 +77,7 @@
   \item 作为采购服务组负责人对接产品经理、线下业务团队，确定需求内容及排期。
   \item 优化历史遗留问题，稳定化多个复杂业务查询逻辑，将多个频发超时接口稳定至常数时间内返回。
   \item 带领小组成员制定代码规范，对部分老服务重构优化。
+  \item 参与内部系统前端页面的构建，实现合同打印等功能。
 \end{itemize}
 
 \textbf{杭州品茗} \hfill 2017.5 - 2017.11\\
@@ -97,8 +101,8 @@
   \item \textbf{FatCoupon} {} \hfill \href{www.fatcoupon.com}{fatcoupon.com}
   \begin{itemize}
     \itemsep -3pt {}
-    \item 设计并实现基于Docker、AWS Lambda函数计算构建微服务与无服务（Serverless）架构体系，并通过HTTP、gRPC、消息队列以及Lambda调用实现服务间通信。
-    \item 基于AWS服务以及消息队列构建消息推送、邮件等基础服务，实现订阅列表、模板渲染以及日均十万级消息的处理。
+    \item 设计并实现基于Docker、AWS Lambda函数计算构建微服务与Serverless相结合的架构体系，并通过HTTP、gRPC、消息队列以及Lambda调用实现服务间通信。
+    \item 基于AWS服务以及消息队列构建消息推送、邮件、短信等基础服务，实现订阅列表、模板渲染等功能，在服务商频率限制内提供日均数十万级消息处理能力。
     \item 通过定时任务从多个上游服务获取并分析处理订单数据，实现对多个项目每日十万级订单数据的检测、创建、更新以及其奖励机制的处理。
     \item 扩展AWS CloudFront CDN功能，实现根据请求参数修改图片、获取第三方图片等功能。
   \end{itemize}
@@ -106,7 +110,8 @@
   \item \textbf{Kash.ly返利短链接系统} {} \hfill \href{kashly.net}{kashly.net}
   \begin{itemize}
     \itemsep -3pt {}
-    \item 设计基于LCG、Base62算法与MySQL实现，提供核心逻辑平均处理时间少于10ms，接口平均时间少于30ms的短链接服务。
+    \item 设计基于LCG、Base62算法与MySQL实现的非线性伪随机短链接生成服务，并提供合法性检查减少错误链接带来的数据库请求资源消耗。
+    \item 通过AWS Lambda部署短链接跳转服务，提供大量并发处理能力，服务核心逻辑平均处理时间少于5ms，接口平均时间少于30ms。
     \item 提供超过一万家网站的设别判断，为用户短链接提供返利处理及返利信息显示。
     \item 记录并分析短链接数据，为运营团队及用户提供分时点击量、设备信息等统计数据。
   \end{itemize}
