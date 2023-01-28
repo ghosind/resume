@@ -274,3 +274,7 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# Resume with real personal data
+*-private.tex
+*-private.pdf

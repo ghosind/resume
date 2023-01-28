@@ -8,6 +8,8 @@ en: resume
 
 zhcn: resume-cn
 
+private_cn: resume-cn-private
+
 %: %.tex
 	$(TEX) $<
 
