@@ -7,7 +7,7 @@
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
 \name{Chen Su}
-\address{\href{mailto:ghosind@gmail.com}{ghosind@gmail.com} \\ \href{https://ghosind.com}{ghosind.com} \\ \href{github.com/ghosind}{github.com/ghosind}}
+\address{\href{mailto:ghosind@gmail.com}{ghosind@gmail.com} \\ \href{https://ghosind.com}{ghosind.com} \\ \href{https://github.com/ghosind}{github.com/ghosind}}
 
 \begin{document}
 
@@ -53,9 +53,10 @@
   \itemsep -3pt {}
   \item 作为主要负责人参与了多个项目从0到1落地，并负责或参与后续的研发与维护。
   \item 负责服务端基于AWS Lambda、Docker等基础服务设计并构建跨项目架构体系，开发基于Golang、Node.js等语言实现的服务端系统。
-  \item 编写项目基础框架，构建动态配置中心、任务管道等基础设施服务，并建立通用邮件、消息推送等跨项目服务中间件服务。
+  \item 实现并维护内部使用的Web服务、数据库处理、消息处理等基础框架，构建动态配置中心、任务管道等基础设施服务，建立通用邮件、消息推送等跨项目中间件服务。
   \item 优化基于AWS云服务的内部网络拓扑结构，设计多级缓存逻辑，降低超75\%的内部网络通信成本（单月成本由2700美元降低至600美元，通信数据传输量由单月190+TB降低至15TB）。
   \item 构建基于设备设别、验证码校验等方式的服务安全体系，防御脚本恶意登录等攻击性行为。
+  \item 开发内部运维自动化工具，提供服务健康检测汇报、冷数据归档、日志备份处理等功能。
   \item 基于React、AntDesign构建服务端控制平台，实现服务配置管理等基础服务的图形化处理界面。
 \end{itemize}
 
@@ -63,7 +64,7 @@
 后端工程师 \hfill \textit{}
 \begin{itemize}
   \itemsep -3pt {}
-  \item 作为主要负责人开发并维护基于Node.js、GraphQL的社交平台后端服务。
+  \item 作为主要负责人开发并维护基于Node.js、MySQL、GraphQL的社交平台后端服务。
   \item 开发基于FoF算法的好友推荐系统，为用户提供伪实时二度好友推荐。
   \item 参与基于AWS云服务、Docker的服务端架构设计，基于GitLab CI/CD和Shell脚本实现服务自动化部署。
   \item 参与部分移动端React Native界面及功能的实现。
@@ -84,10 +85,10 @@
 软件工程师 \hfill \textit{}
 \begin{itemize}
   \itemsep -3pt {}
-  \item 基于AutoDesk Revit、C\#、C++开发作为公司主要产品的HiBIM。
-  \item 开发基于WPF、WinForm的Windows桌面程序。
+  \item 基于AutoDesk Revit、C\#、C++开发三维建筑信息管理系统。
+  \item 开发基于WPF、WinForm以及MVVM设计模式的Windows桌面程序。
   \item 参与基于2D CAD图纸的3D模型建模功能开发，实现管道建模等功能。
-  \item 基于SQLite实现HiBIM与CAD图纸数据的共享。
+  \item 参与跨团队间基于SQLite实现HiBIM与CAD图纸的数据共享开发。
 \end{itemize}
 
 \end{rSection}
@@ -97,42 +98,41 @@
 %----------------------------------------------------------------------------------------
 \begin{rSection}{项目经历}
   \vspace{-1.25em}
-  
+
   \item \textbf{FatCoupon} {} \hfill \href{www.fatcoupon.com}{fatcoupon.com}
   \begin{itemize}
     \itemsep -3pt {}
     \item 设计并实现基于Docker、AWS Lambda函数计算构建微服务与Serverless相结合的架构体系，并通过HTTP、gRPC、消息队列以及Lambda调用实现服务间通信。
-    \item 基于AWS服务以及消息队列构建消息推送、邮件、短信等基础服务，实现订阅列表、模板渲染等功能，在服务商频率限制内提供日均六十万级消息处理能力。
-    \item 设计并实现定时订单获取系统，从多个上游服务获取并分析处理订单数据，实现日均两百万级订单数据的处理。
-    \item 扩展AWS CloudFront CDN功能，实现自定义请求参数控制实现修改图片尺寸、缓存第三方图片等功能。
+    \item 基于AWS服务以及消息队列构建消息推送、邮件、短信等基础服务，实现订阅列表、模板渲染等功能，在服务商频率限制内提供日均百万级消息处理能力。
+    \item 设计并实现定时订单获取系统，从多个上游服务获取并分析处理订单数据，实现日均百万级订单数据的处理。
+    \item 扩展AWS CloudFront CDN功能，提供自定义请求参数控制实现修改图片尺寸、缓存第三方图片等功能。
   \end{itemize}
-  
+
   \item \textbf{Kash.ly返利短链接系统} {} \hfill \href{kashly.net}{kashly.net}
   \begin{itemize}
     \itemsep -3pt {}
     \item 设计基于LCG、Base62算法与MySQL实现的非线性伪随机短链接生成服务，并提供合法性检查减少错误链接带来的数据库请求资源消耗。
     \item 通过AWS Lambda部署短链接跳转服务，提供并发下自扩容能力，服务核心逻辑平均处理时间少于5ms，接口平均时间少于30ms。
-    \item 提供超过一万家网站的设别判断，为用户短链接提供返利处理及返利信息显示。
+    \item 提供超过一万家网站的识别判断，为用户短链接提供返利处理及返利信息显示。
     \item 记录并分析短链接数据，为运营团队及用户提供分时点击量、设备信息等统计数据。
   \end{itemize}
-  
-  \item \textbf{Foodieats} {} \hfill \href{foodieats.com}{foodieats.com}
+
+  \item \textbf{Foodieats} {}
   \begin{itemize}
     \itemsep -3pt {}
     \item 独立完成该项目的设计，实现餐厅入驻、餐品自定义化设计、客户下单支付等核心逻辑。
     \item 基于MySQL地理空间类型及Redis Geo类型实现基于地理位置距离的餐厅推荐。
-    \item 实现第三方登录逻辑，提供Apple、Google、Facebook等第三方登录。
     \item 接入Stripe支付系统，提供完整的自动化订单支付流程。
   \end{itemize}
-  
-  \item \textbf{DVM} {ShellScript} \hfill \href{github.com/ghosind/dvm}{github.com/ghosind/dvm}
+
+  \item \textbf{DVM} {} \hfill \href{https://github.com/ghosind/dvm}{github.com/ghosind/dvm}
   \begin{itemize}
     \itemsep -3pt {}
-    \item ShellScript编写的Deno版本管理个人开源项目，提供了Deno安装/卸载、版本切换、别名管理以及错误检测等功能。
+    \item ShellScript编写的Linux/MacOS平台下Deno版本管理开源项目，提供了Deno版本安装、卸载、版本间切换、别名管理以及版本信息错误检测等功能。
     \item 设计基于Git的自我版本管理，实现通过命令完成DVM的一键版本升级。
-    \item 项目在GitHub、Gitee等平台发布，并被列为Gitee官方推荐项目。
+    \item 项目在GitHub、Gitee等平台发布，提供镜像选择功能，并被列为Gitee官方推荐项目。
   \end{itemize}
-  
+
 \end{rSection}
 
 \end{document}
