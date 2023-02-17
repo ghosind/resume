@@ -48,7 +48,7 @@
 \begin{rSection}{工作经验}
 
 \textbf{FatCoupon} \hfill 2019.5 - 至今\\
-后端工程师/后端负责人 \hfill \textit{}
+后端负责人/后端工程师 \hfill \textit{}
 \begin{itemize}
   \itemsep -3pt {}
   \item 作为主要负责人参与了多个项目从0到1落地，并负责或参与后续的研发与维护。
@@ -102,24 +102,34 @@
   \begin{itemize}
     \itemsep -3pt {}
     \item 设计并实现基于Docker、AWS Lambda函数计算构建微服务与Serverless相结合的架构体系，并通过HTTP、gRPC、消息队列以及Lambda调用实现服务间通信。
-    \item 基于AWS服务以及消息队列构建消息推送、邮件、短信等基础服务，实现订阅列表、模板渲染等功能，在服务商频率限制内提供日均数十万级消息处理能力。
-    \item 通过定时任务从多个上游服务获取并分析处理订单数据，实现对多个项目每日十万级订单数据的检测、创建、更新以及其奖励机制的处理。
-    \item 扩展AWS CloudFront CDN功能，实现根据请求参数修改图片、获取第三方图片等功能。
+    \item 基于AWS服务以及消息队列构建消息推送、邮件、短信等基础服务，实现订阅列表、模板渲染等功能，在服务商频率限制内提供日均六十万级消息处理能力。
+    \item 设计并实现定时订单获取系统，从多个上游服务获取并分析处理订单数据，实现日均两百万级订单数据的处理。
+    \item 扩展AWS CloudFront CDN功能，实现自定义请求参数控制实现修改图片尺寸、缓存第三方图片等功能。
   \end{itemize}
   
   \item \textbf{Kash.ly返利短链接系统} {} \hfill \href{kashly.net}{kashly.net}
   \begin{itemize}
     \itemsep -3pt {}
     \item 设计基于LCG、Base62算法与MySQL实现的非线性伪随机短链接生成服务，并提供合法性检查减少错误链接带来的数据库请求资源消耗。
-    \item 通过AWS Lambda部署短链接跳转服务，提供大量并发处理能力，服务核心逻辑平均处理时间少于5ms，接口平均时间少于30ms。
+    \item 通过AWS Lambda部署短链接跳转服务，提供并发下自扩容能力，服务核心逻辑平均处理时间少于5ms，接口平均时间少于30ms。
     \item 提供超过一万家网站的设别判断，为用户短链接提供返利处理及返利信息显示。
     \item 记录并分析短链接数据，为运营团队及用户提供分时点击量、设备信息等统计数据。
+  \end{itemize}
+  
+  \item \textbf{Foodieats} {} \hfill \href{foodieats.com}{foodieats.com}
+  \begin{itemize}
+    \itemsep -3pt {}
+    \item 独立完成该项目的设计，实现餐厅入驻、餐品自定义化设计、客户下单支付等核心逻辑。
+    \item 基于MySQL地理空间类型及Redis Geo类型实现基于地理位置距离的餐厅推荐。
+    \item 实现第三方登录逻辑，提供Apple、Google、Facebook等第三方登录。
+    \item 接入Stripe支付系统，提供完整的自动化订单支付流程。
   \end{itemize}
   
   \item \textbf{DVM} {ShellScript} \hfill \href{github.com/ghosind/dvm}{github.com/ghosind/dvm}
   \begin{itemize}
     \itemsep -3pt {}
-    \item ShellScript编写的Deno版本管理个人开源项目，提供了与NVM相似的版本管理功能。
+    \item ShellScript编写的Deno版本管理个人开源项目，提供了Deno安装/卸载、版本切换、别名管理以及错误检测等功能。
+    \item 设计基于Git的自我版本管理，实现通过命令完成DVM的一键版本升级。
     \item 项目在GitHub、Gitee等平台发布，并被列为Gitee官方推荐项目。
   \end{itemize}
   
