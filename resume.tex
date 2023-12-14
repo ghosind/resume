@@ -1,7 +1,7 @@
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry}
-\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\usepackage[left=0.2 in,top=0.2in,right=0.2 in,bottom=0.2in]{geometry}
+% \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Chen Su}
 \address{Shanghai, CN}
@@ -23,21 +23,15 @@
 %----------------------------------------------------------------------------------------
 % TECHNICAL STRENGTHS
 %----------------------------------------------------------------------------------------
-\begin{rSection}{SKILLS}
-  \begin{itemize}
-    \itemsep -3pt {}
-    \item Strong knowledge of C, Golang, Javascript/Typescript, and C\# software development.
-    \item Design and implement scalable, highly available services with Docker and Kubernetes.
-    \item Knowledge of database schema design, and SQL, experience in MySQL, MongoDB, and ElasticSearch.
-    \item Proficient in UNIX/Linux environment, and shell scripting.
-    \item Familiar with AWS and AliCloud services.
-    \item Excellent git version management skills.
-    \item Knowledge of Web development with HTML5, Node.js, and React.
-    \item Ability to find out security and reliability issues.
-    \item Strong Chinese communication skills, and able to working with international teams.
-    \item Contributed to open source projects: thinkjs, upterm, etc.
-  \end{itemize}
-\end{rSection}
+% \begin{rSection}{SKILLS}
+%   \begin{itemize}
+%     \itemsep -3pt {}
+%     \item Strong knowledge of C, Golang, Javascript/Typescript, and C\# software development.
+%     \item Design and implement scalable, highly available services with Docker and Kubernetes.
+%     \item Knowledge of database schema design, and SQL, experience in MySQL, MongoDB, and ElasticSearch.
+%     \item Proficient in UNIX/Linux environment, and shell scripting.
+%   \end{itemize}
+% \end{rSection}
 
 
 %----------------------------------------------------------------------------------------
@@ -46,52 +40,46 @@
 \begin{rSection}{EXPERIENCE}
 
   \textbf{FatCoupon Technology Limited} \hfill Shanghai, CN\\
-  Sr Backend Engineer \hfill \textit{May 2019 - Present}
+  \textit{Sr Backend Engineer, Backend Lead} \hfill \textit{May 2019 - Present}
   \begin{itemize}
-    \itemsep -3pt {}
-    \item Develop backend service to provide Restful API for web and mobile applications.
-    \item Design and develop micro-service architecture, and supporting inter-services communication by HTTP, gRPC, and MQ.
-    \item Design database schema (including MySQL and MongoDB), and optimize query performance.
-    \item Design scalable services with Docker, Kubernetes, and AWS Lambda.
-    \item Create Shellscript and Makefile scripts to automate the development and deployment processes.
-    \item Modify CDN pipeline to provide custom resizing and caching third-party resources.
-    \item AWS services and Linux OS management.
-    \item Create documentation with Swagger and markdown files.
+    \itemsep -5pt {}
+    \item Leadership: Lead the backend team, create the code standard, scheduled jobs, reviewed the code, and supported the engineering team.
+    \item Architecture: Design the architecture of the services by combining serverless and microservices, and communicate with HTTP, gRPC, or MQ.
+    \item Backend Services: Golang and Node.js services to provide RESTful API, and build RBAC authorization server, dynamic configuration management, and other infrastructure services.
+    \item Order Service: Fetch raw order data from over 30 third-party by their API, data cleaning and analysis, and handle over 2 million orders per day.
+    \item Payment Gateway: Integrate PayPal, AliPay, and other payment methods by third-party API, and provide universal API for internal services.
+    \item Notifications: Services for sending email, SMS, and in-app notifications, involved in features such as queuing, rate limiting, and error handling.
+    \item CDN Extension: Customize the AWS CloudFront pipeline to resize image resources, and cache third-party images asynchronously to speed up requests.
   \end{itemize}
-  
+
   \textbf{Timepop Technologies} \hfill Shanghai, CN\\
-  Backend Engineer \hfill \textit{Sep 2018 - Feb 2019}
+  \textit{Backend Engineer} \hfill \textit{Sep 2018 - Feb 2019}
   \begin{itemize}
-    \itemsep -3pt {}
-    \item Develop a Node.js service to provide GraphQL API for mobile applications.
-    \item Implement recommendation system by FtF algorithm.
-    \item Develop instant chatting system based on Websocket.
-    \item Assist frontend team with developing mobile application with React Native framework.
+    \itemsep -5pt {}
+    \item GraphQL Services: Node.js Services to provide GraphQL API for mobile applications.
+    \item Recommendations: Service for user and content recommendation, it worked on both offline data analysis and online serving.
+    \item Mobile Applications: Participate in the development of mobile applications with JavaScript and React Native.
   \end{itemize}
-  
+
   \textbf{Shanghai Dianda Information Technology} \hfill Shanghai, CN\\
-  Backend Engineer \hfill \textit{Apr 2018 - Aug 2018}
+  \textit{Backend Engineer} \hfill \textit{Apr 2018 - Aug 2018}
   \begin{itemize}
-    \itemsep -3pt {}
-    \item Lead 5 engineer teams to develop B2B products, including both Node.js services and web pages.
-    \item Participate in the product prototype design with PM and sales department.
-    \item Refactor and optimize the existing code, migrate Node.js 0.10 projects to Node.js 8.
-    \item Mentor junior engineers and interns.
-    \item Review code and fix bugs.
+    \itemsep -5pt {}
+    \item Team Management: Lead the team that included 5 engineers to create server-side service of the supply chain system that was implemented by Node.js.
+    \item Refactor and Optimization: Migrate Node.js 0.10 services to Node.js 8, and optimize MySQL queries to stabilize the APIs.
   \end{itemize}
-  
+
   \textbf{Pinming Technology Co Ltd.} \hfill Hangzhou, CN\\
-  Software Development Engineer \hfill \textit{May 2017 - Nov 2017}
+  \textit{Software Development Engineer} \hfill \textit{May 2017 - Nov 2017}
   \begin{itemize}
-    \itemsep -3pt {}
-    \item Develop building information management software based on C\#/C++ and Autodesk Revit SDK.
-    \item Develop Windows desktop software by WPF framework.
-    \item Recognize and convert CAD file to 3D models.
-    \item Import and export data from 3D models to SQLite database.
+    \itemsep -5pt {}
+    \item BIM Software: Participate the development of the 3D modeling BIM software based on C++/C\#, WPF, and Autodesk Revit SDK.
+    \item Model Generation: Parse data from the 2D CAD file, and generate 3D models with the parsed data and pre-defined parameters.
+    \item Data Persistance: Persist the structured model data to SQLite, and share to the CAD software.
   \end{itemize}
-  
+
 \end{rSection}
-  
+
 
 %----------------------------------------------------------------------------------------
 % PROJECTS
@@ -99,31 +87,26 @@
 \begin{rSection}{PROJECTS}
 \vspace{-1.25em}
 
-\item \textbf{FatCoupon} {Node.js, Golang, MongoDB, AWS} \hfill \href{https://www.fatcoupon.com}{fatcoupon.com}
+% \item \textbf{FatCoupon} {Node.js, Golang, MongoDB, AWS} \hfill \href{https://www.fatcoupon.com}{fatcoupon.com}
+% \begin{itemize}
+%   \itemsep -3pt {}
+%   \item Develop a Node.js monolithic service, Golang micro-services, and AWS Lambda serverless functions.
+%   \item Support over 10 million requests per day (over 100 requests per second) by 9 docker instances (3x 2c4g EC2 instance, with 20\% CPU baseline).
+%   \item Store data in MySQL and MongoDB to improve performance, and cache data by Redis.
+%   \item Collect and analysis data from various sources.
+%   \item Provide fuzzing text search by ElasticSearch.
+% \end{itemize}
+
+\item \textbf{Kashly Short Link Service} {} \hfill \href{https://kashly.net}{kashly.net}
 \begin{itemize}
-  \itemsep -3pt {}
-  \item Develop a Node.js monolithic service, Golang micro-services, and AWS Lambda serverless functions.
-  \item Support over 10 million requests per day (over 100 requests per second) by 9 docker instances (3x 2c4g EC2 instance, with 20\% CPU baseline).
-  \item Store data in MySQL and MongoDB to improve performance, and cache data by Redis.
-  \item Collect and analysis data from various sources.
-  \item Provide fuzzing text search by ElasticSearch.
+  \itemsep -5pt {}
+  \item Short link service based on LCG and Base62 algorithms, collect and analyze click data to provide daily statistics.
 \end{itemize}
 
-\item \textbf{Kashly Short Link} {Golang, MySQL, AWS} \hfill \href{https://kashly.net}{kashly.net}
+\item \textbf{DVM} {} \hfill \href{https://github.com/ghosind/dvm}{github.com/ghosind/dvm}
 \begin{itemize}
-  \itemsep -3pt {}
-  \item Allocate unique id for every unique link by MySQL, and filter duplicate link by hashing functions.
-  \item Liner transformation a link id to pseudorandom number by linear congruential generator algorithm (LCG), and encode it by Base62 algorithm.
-  \item Deploy service to AWS Lambda to provide high availability and global acceleration.
-\end{itemize}
-
-\item \textbf{DVM} {ShellScript} \hfill \href{https://github.com/ghosind/dvm}{github.com/ghosind/dvm}
-\begin{itemize}
-  \itemsep -3pt {}
-  \item Create an NVM-like Deno version manager project with Shellscript.
-  \item Design, develop, and maintain the open source project as the core developer and maintainer.
-  \item Create test cases and GitHub Actions automation testing flow.
-  \item The project has been recommended by Gitee official team.
+  \itemsep -5pt {}
+  \item Open source NVM-like Deno version manager for Linux/MacOS implemented by ShellScript.
 \end{itemize}
 
 \end{rSection}

@@ -6,10 +6,6 @@ Some of my private data (including my phone number and other information) was re
 
 这个仓库用于存放我的简历（包括了PDF文件以及LaTeX源码），其中包括有[中文版本简历](./resume-cn.pdf)以及[英文版本简历](./resume.pdf)。一些不适合公开的内容（例如电话号码）已经从该公开版本中删除，如有兴趣烦请通过[邮件](mailto:ghosind@gmail.com)联系。
 
-> English version is out of date.
->
-> 英文版本非最新版本，内容已经过时。
-
 ## Building from source
 
 ### Requirements
