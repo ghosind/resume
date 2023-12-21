@@ -1,8 +1,9 @@
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[left=0.2 in,top=0.2in,right=0.2 in,bottom=0.2in]{geometry}
-% \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\usepackage[left=0.5in,top=0.2in,right=0.5in,bottom=0.2in]{geometry}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
 \name{Chen Su}
 \address{Shanghai, CN}
 \address{\href{mailto:ghosind@gmail.com}{ghosind@gmail.com} \\ \href{https://ghosind.com}{ghosind.com} \\ \href{https://github.com/ghosind}{github.com/ghosind}}
@@ -16,7 +17,9 @@
 
 \begin{rSection}{Education}
 
-  {\bf Bachelor of Engineering in Computer Science and Technology} \hfill {Jane 2017}
+  \textbf{Wenzheng College of Soochow University} \hfill \textit{Jane 2017} \\
+  B.Eng. in Computer Science and Technology
+  % {\bf Bachelor of Engineering in Computer Science and Technology} \hfill {Jane 2017}
 
 \end{rSection}
 
@@ -39,10 +42,7 @@
 %----------------------------------------------------------------------------------------
 \begin{rSection}{EXPERIENCE}
 
-  \textbf{FatCoupon Technology Limited} \hfill Shanghai, CN\\
-  \textit{Sr Backend Engineer, Backend Lead} \hfill \textit{May 2019 - Present}
-  \begin{itemize}
-    \itemsep -5pt {}
+  \begin{rSubsection}{FatCoupon Technology Limited}{May 2019 - Present}{Sr Backend Engineer, Backend Lead}{Shanghai, CN}
     \item Leadership: Lead the backend team, create the code standard, scheduled jobs, reviewed the code, and supported the engineering team.
     \item Architecture: Design the architecture of the services by combining serverless and microservices, and communicate with HTTP, gRPC, or MQ.
     \item Backend Services: Golang and Node.js services to provide RESTful API, and build RBAC authorization server, dynamic configuration management, and other infrastructure services.
@@ -50,33 +50,24 @@
     \item Payment Gateway: Integrate PayPal, AliPay, and other payment methods by third-party API, and provide universal API for internal services.
     \item Notifications: Services for sending email, SMS, and in-app notifications, involved in features such as queuing, rate limiting, and error handling.
     \item CDN Extension: Customize the AWS CloudFront pipeline to resize image resources, and cache third-party images asynchronously to speed up requests.
-  \end{itemize}
+  \end{rSubsection}
 
-  \textbf{Timepop Technologies} \hfill Shanghai, CN\\
-  \textit{Backend Engineer} \hfill \textit{Sep 2018 - Feb 2019}
-  \begin{itemize}
-    \itemsep -5pt {}
+  \begin{rSubsection}{Timepop Technologies}{Sep 2018 - Feb 2019}{Backend Engineer}{Shanghai, CN}
     \item GraphQL Services: Node.js Services to provide GraphQL API for mobile applications.
     \item Recommendations: Service for user and content recommendation, it worked on both offline data analysis and online serving.
-    \item Mobile Applications: Participate in the development of mobile applications with JavaScript and React Native.
-  \end{itemize}
+    \item Mobile Apps: Participate in the development of mobile applications with React Native.
+  \end{rSubsection}
 
-  \textbf{Shanghai Dianda Information Technology} \hfill Shanghai, CN\\
-  \textit{Backend Engineer} \hfill \textit{Apr 2018 - Aug 2018}
-  \begin{itemize}
-    \itemsep -5pt {}
+  \begin{rSubsection}{Shanghai Dianda Information Technology}{Apr 2018 - Aug 2018}{Backend Engineer}{Shanghai, CN}
     \item Team Management: Lead the team that included 5 engineers to create server-side service of the supply chain system that was implemented by Node.js.
     \item Refactor and Optimization: Migrate Node.js 0.10 services to Node.js 8, and optimize MySQL queries to stabilize the APIs.
-  \end{itemize}
+  \end{rSubsection}
 
-  \textbf{Pinming Technology Co Ltd.} \hfill Hangzhou, CN\\
-  \textit{Software Development Engineer} \hfill \textit{May 2017 - Nov 2017}
-  \begin{itemize}
-    \itemsep -5pt {}
+  \begin{rSubsection}{Pinming Technology Co Ltd.}{May 2017 - Nov 2017}{Software Development Engineer}{Hangzhou, CN}
     \item BIM Software: Participate the development of the 3D modeling BIM software based on C++/C\#, WPF, and Autodesk Revit SDK.
     \item Model Generation: Parse data from the 2D CAD file, and generate 3D models with the parsed data and pre-defined parameters.
     \item Data Persistance: Persist the structured model data to SQLite, and share to the CAD software.
-  \end{itemize}
+  \end{rSubsection}
 
 \end{rSection}
 
@@ -85,29 +76,18 @@
 % PROJECTS
 %----------------------------------------------------------------------------------------
 \begin{rSection}{PROJECTS}
-\vspace{-1.25em}
 
-% \item \textbf{FatCoupon} {Node.js, Golang, MongoDB, AWS} \hfill \href{https://www.fatcoupon.com}{fatcoupon.com}
-% \begin{itemize}
-%   \itemsep -3pt {}
-%   \item Develop a Node.js monolithic service, Golang micro-services, and AWS Lambda serverless functions.
-%   \item Support over 10 million requests per day (over 100 requests per second) by 9 docker instances (3x 2c4g EC2 instance, with 20\% CPU baseline).
-%   \item Store data in MySQL and MongoDB to improve performance, and cache data by Redis.
-%   \item Collect and analysis data from various sources.
-%   \item Provide fuzzing text search by ElasticSearch.
-% \end{itemize}
+\begin{rSubsection}{Kashly Short Link Service}{\href{https://kashly.net}{kashly.net}}{}{}
+  \item Short link service based on LCG and Base62 algorithms. Also worked on collecting and analyzing click data to provide daily statistics.
+\end{rSubsection}
 
-\item \textbf{Kashly Short Link Service} {} \hfill \href{https://kashly.net}{kashly.net}
-\begin{itemize}
-  \itemsep -5pt {}
-  \item Short link service based on LCG and Base62 algorithms, collect and analyze click data to provide daily statistics.
-\end{itemize}
+\begin{rSubsection}{FlashGiftCard}{\href{https://flashgiftcard.com}{flashgiftcard.com}}{}{}
+  \item Services for e-gift cards online shop, worked on order, payment, and authorization services.
+\end{rSubsection}
 
-\item \textbf{DVM} {} \hfill \href{https://github.com/ghosind/dvm}{github.com/ghosind/dvm}
-\begin{itemize}
-  \itemsep -5pt {}
-  \item Open source NVM-like Deno version manager for Linux/MacOS implemented by ShellScript.
-\end{itemize}
+\begin{rSubsection}{DVM}{\href{https://github.com/ghosind/dvm}{github.com/ghosind/dvm}}{}{}
+  \item Open source Deno version manager for Linux/MacOS implemented by ShellScript.
+\end{rSubsection}
 
 \end{rSection}
 

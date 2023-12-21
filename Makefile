@@ -10,6 +10,8 @@ zhcn: resume-cn
 
 private_cn: resume-cn-private
 
+private_en: resume-private
+
 %: %.tex
 	$(TEX) $<
 
