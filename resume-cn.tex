@@ -29,16 +29,16 @@
   \begin{itemize}
     \itemsep -3pt {}
     \item 熟悉Golang、JavaScript/TypeScript、C等编程语言，具有相应的的工作或项目经验。
-    \item 具有分布式后端服务架构设计经验，有能力独立或参与团队合作进行架构设计与技术选型。
+    \item 具有分布式后端服务架构设计经验，有能力独立或参与团队合作进行架构设计、技术选型及开发。
     \item 熟悉常用的MySQL、MongoDB、Redis等数据库系统，对ElasticSearch有一定了解。
     \item 熟悉Docker使用及Dockerfile的编写，对Kubernetes有一定了解。
     \item 熟悉常用的HTTP、gRPC等通信方式，对GraphQL、SOAP等协议有所了解。
-    \item 熟悉AWS云服务，具有五年基于AWS云服务的应用程序开发经验，对阿里云及微软Azure有一定了解。
+    \item 熟悉AWS云服务，具有六年基于AWS云服务的应用程序开发经验，对阿里云及微软Azure有一定了解。
     \item 对Linux系统有一定的了解，熟悉Linux下基本命令的使用以及Shell脚本的编写。
     \item 了解消息队列系统机制，有RabbitMQ与ActiveMQ使用经验。
     \item 具有GitHub Actions、GitLab CI/CD等自动化工具使用经验，熟悉通过Shell脚本构建自动化工具。
     \item 具有国际化团队合作经验（北美、欧洲、东南亚），有一定的英文阅读表达能力。
-    \item 对开源项目抱有极大热情，具有Deno、Upterm等多个开源项目的参与经历。
+    \item 提交多个PR至Golang、Deno等项目并被合并入主线，并作为导师指导CNCF LFX Mentorship计划中的KubeEdge课题。
   \end{itemize}
 \end{rSection}
 
@@ -51,12 +51,12 @@
 技术负责人、后端工程师 \hfill \textit{}
 \begin{itemize}
   \itemsep -3pt {}
-  \item 负责技术团队建设及管理工作，主要负责后端技术团队日常管理工作事务，并参与前端项目核心模块的设计。
-  \item 作为主要负责人参与多个项目从0到1落地，负责项目技术选型、服务端架构设计以及核心功能实现等。
+  \item 负责技术团队建设及管理工作，主要负责后端技术团队日常管理工作事务，及前端项目核心模块的设计。
+  \item 作为主要负责人负责多个项目从0到1落地，主要工作职责包括项目技术选型、服务端架构设计以及核心功能实现等。
   \item 设计并实现基于AWS Lambda、Docker等基础设施的跨项目微服务架构体系，开发基于Golang、Node.js等语言实现的服务端系统。
   \item 实现并维护内部使用的Web服务、数据库处理、消息处理等基础框架，构建支付网关、动态配置中心、任务队列等基础设施服务，建立通用邮件、消息推送服务等跨项目中间件服务。
   \item 优化基于AWS云服务的内部网络拓扑结构，设计多级缓存逻辑，降低超75\%的内部网络通信成本。
-  \item 构建基于用户身份设别、多维度身份验证等方式的服务安全体系，防御脚本恶意登录等攻击性行为。
+  \item 构建基于用户身份设别、多维度身份验证（邮件、短信、TOTP）等方式的服务安全体系，为服务数据提供安全性保障。
   \item 开发内部运维自动化工具，提供服务健康检测汇报、冷数据归档、日志备份处理等功能。
   \item 基于React、AntDesign构建服务端控制平台，实现服务配置管理等基础服务的图形化处理界面。
 \end{itemize}
@@ -66,7 +66,7 @@
 \begin{itemize}
   \itemsep -3pt {}
   \item 作为主要负责人开发并维护基于Node.js、MySQL、GraphQL的社交平台后端服务。
-  \item 开发基于FoF算法的好友推荐系统，定时分析用户数据，为用户提供伪实时二度好友推荐。
+  \item 开发基于FoF等推荐算法的好友推荐系统，定时分析用户数据，为用户提供伪实时二度好友推荐。
   \item 参与基于AWS云服务、Docker的服务端架构设计，基于GitLab CI/CD和Shell脚本实现服务自动化部署。
   \item 参与部分移动端React Native界面及基于Websocket的即时通信功能实现。
 \end{itemize}
@@ -105,16 +105,17 @@
     \itemsep -3pt {}
     \item 设计并实现基于Docker、AWS Lambda函数计算构建微服务与Serverless相结合的架构体系，并通过HTTP、gRPC、消息队列以及Lambda调用实现服务间通信。
     \item 基于AWS服务以及消息队列构建消息推送、邮件、短信等基础服务，实现订阅列表、模板渲染等功能，在服务商频率限制下提供日均百万级消息处理能力。
-    \item 设计并实现订单获取系统，从多个上游服务获取并分析处理订单数据，实现日均两百万级订单数据的处理。
-    \item 扩展AWS CloudFront CDN功能，提供自定义请求参数控制实现修改图片尺寸、缓存第三方图片等功能。
-  \end{itemize}
-
-  \item \textbf{FlashGiftcard} {}
-  \begin{itemize}
-    \itemsep -3pt {}
-    \item 设计并实现可配置化多用户组全局权限管理系统，提供毫秒级身份及权限验证，并通过加密证书版本管理及自动刷新机制提高安全性。
+    \item 设计并实现订单获取系统，从多个上游服务获取并分析处理订单数据，实现日均百万级订单数据的处理。
     \item 构建支持支付宝、信用卡、PayPal等国内外主流支付方式的支付网关，为内部服务统一支付接口。
     \item 实现礼品卡基础服务，提供多个上游平台的礼品卡购买、校验以及统一化的服务接口。
+    \item 扩展AWS CloudFront CDN功能，提供自定义请求参数控制实现尺寸修改、缓存第三方图片等功能。
+  \end{itemize}
+
+  \item \textbf{} {}
+  \begin{itemize}
+    \itemsep -3pt {}
+    \item 基于OpenAI GPT4o大语言模型及Google Vision AI，实现图片搜索、准确度分析及关键字优化等功能。
+    \item 实现由上游商家服务接口、内部爬虫系统组成数据收集系统，并通过用户请求及定时任务进行调度管理。
   \end{itemize}
 
   \item \textbf{Kash.ly返利短链接系统} {} \hfill \href{https://kashly.net}{kashly.net}
@@ -122,8 +123,8 @@
     \itemsep -3pt {}
     \item 设计基于LCG、Base62算法与MySQL实现的非线性伪随机短链接服务，实现纳秒级核心算法处理。
     \item 通过AWS Lambda部署短链接跳转服务，提供高并发下自扩容能力，平均接口处理时间低于30ms。
-    \item 基于文本相似度算法支持超过两万家网站的实时识别，为用户短链接提供返利处理及返利信息显示。
-    \item 记录并分析短链接数据，为运营团队及用户提供分时点击量统计、终端设备信息分析等数据。
+    \item 基于Levenshtein、Needleman–Wunsch等算法实现毫秒级链接识别服务，智能判断支持的平台站点。
+    \item 记录并分析短链接数据，为用户及运营团队提供分时点击量统计、终端设备信息分析等数据。
   \end{itemize}
 
   \item \textbf{DVM} {} \hfill \href{https://github.com/ghosind/dvm}{github.com/ghosind/dvm}
